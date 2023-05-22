@@ -11,6 +11,9 @@
 		9B3004F52A1A9275000DD395 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3004F42A1A9275000DD395 /* ContentView.swift */; };
 		9B3004F72A1A9276000DD395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3004F62A1A9276000DD395 /* Assets.xcassets */; };
 		9B3004FA2A1A9276000DD395 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3004F92A1A9276000DD395 /* Preview Assets.xcassets */; };
+		9B3005022A1A92C7000DD395 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3005012A1A92C7000DD395 /* Extensions.swift */; };
+		9B3005052A1A92F1000DD395 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3005042A1A92F1000DD395 /* MainMenuScene.swift */; };
+		9B587A222A1B21000037DC9D /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B587A212A1B21000037DC9D /* GamePlayScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		9B3004F42A1A9275000DD395 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B3004F62A1A9276000DD395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3004F92A1A9276000DD395 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B3005012A1A92C7000DD395 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9B3005042A1A92F1000DD395 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		9B587A212A1B21000037DC9D /* GamePlayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,10 @@
 		9B3004F12A1A9275000DD395 /* DodgePillow */ = {
 			isa = PBXGroup;
 			children = (
-				9B3004F22A1A9275000DD395 /* DodgePillowApp.swift */,
+				9B587A202A1B20EB0037DC9D /* GamePlay */,
+				9B3005062A1A94FD000DD395 /* Application */,
+				9B3005032A1A92E1000DD395 /* MainMenu */,
+				9B3005002A1A92B9000DD395 /* Utils */,
 				9B3004F42A1A9275000DD395 /* ContentView.swift */,
 				9B3004F62A1A9276000DD395 /* Assets.xcassets */,
 				9B3004F82A1A9276000DD395 /* Preview Content */,
@@ -65,6 +74,38 @@
 				9B3004F92A1A9276000DD395 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B3005002A1A92B9000DD395 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9B3005012A1A92C7000DD395 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9B3005032A1A92E1000DD395 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9B3005042A1A92F1000DD395 /* MainMenuScene.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		9B3005062A1A94FD000DD395 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9B3004F22A1A9275000DD395 /* DodgePillowApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9B587A202A1B20EB0037DC9D /* GamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				9B587A212A1B21000037DC9D /* GamePlayScene.swift */,
+			);
+			path = GamePlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3004F52A1A9275000DD395 /* ContentView.swift in Sources */,
+				9B3005022A1A92C7000DD395 /* Extensions.swift in Sources */,
+				9B3005052A1A92F1000DD395 /* MainMenuScene.swift in Sources */,
 				9B3004F32A1A9275000DD395 /* DodgePillowApp.swift in Sources */,
+				9B587A222A1B21000037DC9D /* GamePlayScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +314,7 @@
 				DEVELOPMENT_TEAM = 9299QHCW64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +344,7 @@
 				DEVELOPMENT_TEAM = 9299QHCW64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
