@@ -21,7 +21,7 @@ struct MainPage: View {
 				
 				VStack(spacing: 32) {
 					Spacer()
-					Text("Dodge\nThe\nVirus!")
+					Text("Dodge\nVirus!")
 						.multilineTextAlignment(.center)
 						.font(Font(UIFont.systemFont(ofSize: 72, weight: .semibold, width: .expanded)))
 						.foregroundColor(Color("TitleColor"))
@@ -102,12 +102,25 @@ struct AttributionView: View {
 				.foregroundColor(Color("OnPrimary"))
 			
 			VStack(alignment: .leading) {
-				Text("Pillow: Freepik")
-					.font(Font(UIFont.systemFont(ofSize: 24, weight: .regular)))
-					.foregroundColor(Color("OnPrimary"))
-				Text("Music: Artificial.Music")
-					.font(Font(UIFont.systemFont(ofSize: 24, weight: .regular)))
-					.foregroundColor(Color("OnPrimary"))
+				
+				Link(destination: URL(string: "https://www.freepik.com/free-vector/flat-virus-collection_7274169.htm#query=corona%20virus%20flat&position=41&from_view=search&track=ais")!) {
+					Text("Virus: Freepik")
+						.font(Font(UIFont.systemFont(ofSize: 24, weight: .regular)))
+						.foregroundColor(Color("OnPrimary"))
+				}
+				
+				Link(destination: URL(string: "https://www.freepik.com/free-vector/how-wear-face-mask-illustration_10320187.htm#query=head%20with%20mask%20flat&position=21&from_view=search&track=ais")!) {
+					Text("Head: Freepik")
+						.font(Font(UIFont.systemFont(ofSize: 24, weight: .regular)))
+						.foregroundColor(Color("OnPrimary"))
+				}
+				
+				Link(destination: URL(string: "https://pixabay.com/users/lesiakower-25701529/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=150573")!) {
+					Text("Music: Lesiakower")
+						.font(Font(UIFont.systemFont(ofSize: 24, weight: .regular)))
+						.foregroundColor(Color("OnPrimary"))
+				}
+				
 			}
 						
 
